@@ -64,3 +64,7 @@ Generate a personalized retention email for a specific customer based on their p
 ### AI Evaluation Dashboard
 Monitor the performance and quality of AI responses.
 ![AI Evaluation Dashboard](docs/AI%20Evaluation%20Dashboard.png)
+
+### LangFuse Integration
+View traces and metrics in LangFuse.
+![LangFuse Integration](docs/LangFuse%20Integration.png)
