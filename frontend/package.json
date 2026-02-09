@@ -1,0 +1,24 @@
+{
+  "name": "retention-intelligence-frontend",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "14.2.7",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-markdown": "9.0.1",
+    "remark-gfm": "4.0.0"
+  },
+  "devDependencies": {
+    "typescript": "5.6.2",
+    "@types/node": "22.8.7",
+    "@types/react": "18.3.9",
+    "@types/react-dom": "18.3.0"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "completeness",
+  "version": "v1",
+  "description": "Checks whether the response contains required sections.",
+  "prompt_template": "You are a strict evaluator. Return JSON with keys: completeness (0-1), missing (array). Required sections: retention_summary, offers, next_best_action, email_draft. Response: {response_text}",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "completeness": {"type": "number"},
+      "missing": {"type": "array", "items": {"type": "string"}}
+    },
+    "required": ["completeness", "missing"]
+  },
+  "model": "llama3.2:latest"
+}

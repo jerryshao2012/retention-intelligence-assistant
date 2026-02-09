@@ -1,0 +1,21 @@
+customer_id,name,email,segment,product,tenure_months,complaints_90d,avg_balance,last_login_days,churn_risk_score,reason
+CUST-1001,Aisha Patel,aisha.patel@example.com,Mass Affluent,Cash Back Mastercard,36,0,32000,7,0.22,rewards_competitor
+CUST-1002,Michael Chen,michael.chen@example.com,High-Net-Worth,Cash Back Mastercard,84,1,210000,3,0.18,rewards_competitor
+CUST-1003,Sofia Ramirez,sofia.ramirez@example.com,Service-Recovery,Cash Back Mastercard,18,3,15000,14,0.78,service_issue
+CUST-1004,Liam O'Connor,liam.oconnor@example.com,Mass Affluent,Cash Back Mastercard,60,0,42000,10,0.31,rate_sensitivity
+CUST-1005,Emma Johnson,emma.johnson@example.com,New-to-Bank,Cash Back Mastercard,6,1,8000,20,0.66,onboarding_confusion
+CUST-1006,Noah Williams,noah.williams@example.com,Mass Affluent,Cash Back Mastercard,48,0,51000,5,0.27,rewards_competitor
+CUST-1007,Olivia Brown,olivia.brown@example.com,Service-Recovery,Cash Back Mastercard,30,2,19000,25,0.74,service_issue
+CUST-1008,William Davis,william.davis@example.com,Mass Affluent,Cash Back Mastercard,72,0,62000,12,0.25,rate_sensitivity
+CUST-1009,Ava Martinez,ava.martinez@example.com,New-to-Bank,Cash Back Mastercard,4,1,6000,18,0.69,onboarding_confusion
+CUST-1010,James Garcia,james.garcia@example.com,Mass Affluent,Cash Back Mastercard,90,0,78000,9,0.21,rewards_competitor
+CUST-1011,Isabella Rodriguez,isabella.rodriguez@example.com,Service-Recovery,Cash Back Mastercard,22,2,14000,30,0.81,service_issue
+CUST-1012,Benjamin Lee,benjamin.lee@example.com,Mass Affluent,Cash Back Mastercard,40,0,28000,6,0.29,rate_sensitivity
+CUST-1013,Mia Walker,mia.walker@example.com,High-Net-Worth,Cash Back Mastercard,120,0,310000,2,0.16,rewards_competitor
+CUST-1014,Lucas Hall,lucas.hall@example.com,New-to-Bank,Cash Back Mastercard,8,1,9500,16,0.58,onboarding_confusion
+CUST-1015,Charlotte Allen,charlotte.allen@example.com,Service-Recovery,Cash Back Mastercard,26,3,11000,22,0.83,service_issue
+CUST-1016,Henry Young,henry.young@example.com,Mass Affluent,Cash Back Mastercard,55,0,45000,8,0.33,rate_sensitivity
+CUST-1017,Amelia Hernandez,amelia.hernandez@example.com,Mass Affluent,Cash Back Mastercard,63,0,39000,11,0.36,rewards_competitor
+CUST-1018,Alexander King,alexander.king@example.com,High-Net-Worth,Cash Back Mastercard,96,1,180000,4,0.24,rewards_competitor
+CUST-1019,Evelyn Wright,evelyn.wright@example.com,Service-Recovery,Cash Back Mastercard,28,2,17000,27,0.77,service_issue
+CUST-1020,Daniel Scott,daniel.scott@example.com,Mass Affluent,Cash Back Mastercard,44,0,26000,13,0.30,rate_sensitivity

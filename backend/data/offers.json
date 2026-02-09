@@ -1,0 +1,30 @@
+[
+  {
+    "id": "offer-001",
+    "name": "3-Month Cash Back Boost",
+    "segments": ["Mass Affluent", "New-to-Bank"],
+    "reasons": ["rewards_competitor", "onboarding_confusion"],
+    "details": "2x cash back on groceries and transit for 3 months."
+  },
+  {
+    "id": "offer-002",
+    "name": "Service Recovery Credit",
+    "segments": ["Service-Recovery"],
+    "reasons": ["service_issue"],
+    "details": "$50 statement credit and priority support line."
+  },
+  {
+    "id": "offer-003",
+    "name": "Rate Relief Bundle",
+    "segments": ["Mass Affluent", "High-Net-Worth"],
+    "reasons": ["rate_sensitivity"],
+    "details": "APR reduction by 200 bps for 6 months."
+  },
+  {
+    "id": "offer-004",
+    "name": "Premier Concierge",
+    "segments": ["High-Net-Worth"],
+    "reasons": ["rewards_competitor", "service_issue"],
+    "details": "Dedicated concierge + premium reward match."
+  }
+]

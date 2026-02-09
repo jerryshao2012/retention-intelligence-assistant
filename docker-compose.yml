@@ -1,0 +1,13 @@
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: retention
+    ports:
+      - "5432:5432"
+    volumes:
+      - retention_pg:/var/lib/postgresql/data
+volumes:
+  retention_pg:
