@@ -30,6 +30,7 @@ This guide sets up the full stack locally on macOS.
    - `docker compose -f docker-compose.yml up -d`
 3. Start the API:
    - `uvicorn app.main:app --reload --port 8000 --app-dir backend`
+   Note: `source .venv/bin/activate` is required to start the API.
 
 ## Frontend
 1. Install deps:
@@ -42,3 +43,24 @@ This guide sets up the full stack locally on macOS.
 ## Verify
 - Chat Studio: `http://localhost:3000/chat`
 - AI Eval Dashboard: `http://localhost:3000/dashboard`
+
+## Demo
+
+### Overview
+The application landing page.
+![Overview](docs/Overview.png)
+
+### Chat Studio
+Interact with your data using natural language.
+
+#### Identify At-Risk Customers
+Query the system to find the top 10 customers at risk of churning.
+![Top 10 At-Risk Customers](docs/Chat%20Studio%20-%20top%2010%20at-risk%20customers.png)
+
+#### Generate Retention Email
+Generate a personalized retention email for a specific customer based on their profile.
+![Generate Email](docs/Chat%20Studio%20-%20generate%20email.png)
+
+### AI Evaluation Dashboard
+Monitor the performance and quality of AI responses.
+![AI Evaluation Dashboard](docs/AI%20Evaluation%20Dashboard.png)
