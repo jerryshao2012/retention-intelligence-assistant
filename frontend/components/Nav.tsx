@@ -6,8 +6,8 @@ export default function Nav() {
       <div className="nav-brand">
         <img
           className="brand-logo"
-          src="/jerry-logo.png"
-          alt="JERRY"
+          src="/jerry-bank-logo.png"
+          alt="Jerry Bank"
         />
         <div className="brand-text">
           <div>Retention Intelligence</div>
