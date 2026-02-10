@@ -12,8 +12,6 @@ from app.telemetry.langfuse_client import start_trace
 
 router = APIRouter()
 
-graph = build_graph()
-
 
 class ChatRequest(BaseModel):
     message: str
@@ -56,6 +54,7 @@ async def chat(req: ChatRequest):
         "approve_email": bool(req.approve_email),
         "approve_email_content": req.approve_email_content,
     }
+    graph = build_graph(trace_id=conversation_id)
     result = graph.invoke(state)
     response_text = result.get("response_text", "")
 
@@ -98,6 +97,7 @@ async def chat_stream(req: ChatRequest):
         "approve_email": bool(req.approve_email),
         "approve_email_content": req.approve_email_content,
     }
+    graph = build_graph(trace_id=conversation_id)
     result = graph.invoke(state)
     response_text = result.get("response_text", "")
 

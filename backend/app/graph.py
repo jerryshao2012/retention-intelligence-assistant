@@ -7,6 +7,7 @@ from app.agents.segmentation import segment_customer
 from app.agents.rag import build_product_context, build_semantic_index, find_offers, semantic_retrieve
 from app.agents.communication import generate_response
 from app.data.store import load_customers, load_offers, load_product_catalog, load_knowledge
+from app.telemetry.langfuse_client import get_langfuse_handler
 
 
 class RetentionState(TypedDict, total=False):
@@ -96,7 +97,7 @@ def communication_node(state: RetentionState) -> RetentionState:
     return {"response_text": response_text}
 
 
-def build_graph():
+def build_graph(trace_id: Optional[str] = None):
     graph = StateGraph(RetentionState)
     graph.add_node("attrition_node", attrition_node)
     graph.add_node("segmentation_node", segmentation_node)
@@ -108,4 +109,8 @@ def build_graph():
     graph.add_edge("segmentation_node", "rag_node")
     graph.add_edge("rag_node", "communication_node")
     graph.add_edge("communication_node", END)
-    return graph.compile()
+    compiled = graph.compile()
+    handler = get_langfuse_handler(trace_id=trace_id)
+    if handler:
+        return compiled.with_config({"callbacks": [handler]})
+    return compiled
